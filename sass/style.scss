@@ -1,0 +1,19 @@
+//Команда запуска sass:
+//#sass --watch sass/style.scss:style.css --style compressed
+/*
+Theme Name: Завод кранов
+Theme URI: https://zavodkranov.ru/
+Author: Ishutin Pavel
+Author URI: https://xn--h1aapse3a.xn--p1ai/
+Description: Тема разрабатывается для компании Атлант
+Version: 1.0
+Text Domain: zavodkranov
+*/
+@import '_custom-style';
+@import '_style1';
+@import '_styles2';
+@import '_page-styles';
+@import '_category-styles';
+
+@import 'normalize';
+@import 'bootstrap.min';

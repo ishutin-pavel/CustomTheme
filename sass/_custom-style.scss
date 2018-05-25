@@ -1,0 +1,72 @@
+.class nav ul {
+  list-style: none;
+  padding-left: 0;
+}
+.class nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+.reseted_link {
+  text-decoration: none;
+  color: inherit;
+}
+#header {
+  font-family: Century Gothic, sans-serif;
+  font-size: 1em;
+}
+#header a {
+  text-decoration: none;
+  color: inherit;
+  line-height: 25px;
+  cursor: pointer;
+}
+#pizdec {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+#niz {
+  text-decoration: underline;
+  position: relative;
+  top: -15px;
+}
+#niz #komp {
+  margin: 0px 20px 0 0;
+}
+#niz #prod {
+  margin: 0px 20px 0 0;
+}
+#telefono {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#telefono span {
+  font-size: 1.5em;
+  line-height: 34px;
+  color: #333;
+  text-align: right;
+}
+#telefono p {
+  text-align: right;
+}
+#knopk {
+  display: flex;
+  justify-content: flex-end;
+}
+#knopk img {
+  border: solid 1px #1c9bef;
+  border-radius: 3px;
+  margin-bottom: calc(0.5em);
+  margin-right: 5px;
+  width: 24px;
+  height: 24px;
+}
+#knopk #zapros {
+  border-radius: 3px;
+  color: #fff;
+  text-decoration: none;
+  background: #1c9bef;
+  padding: 3px 5px;
+}
