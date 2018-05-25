@@ -20,8 +20,6 @@ $post = $wp_query->post;
 
 if ( in_category('20') ) {
 		include(TEMPLATEPATH.'/single-zapchasti.php');
-} else if ( in_category('40') ) {
-		include(TEMPLATEPATH.'/single-upravlenie.php');
 } else if ( in_category('36') || in_category('34') || in_category('38') ) {
 	include(TEMPLATEPATH.'/single-tal-seo-text.php');
 } else if( in_category('43') ) {
