@@ -4,9 +4,6 @@
 #page-container a:hover,
 .request .button ul li .pricing:hover {text-decoration: underline; color: #ff4444; }
 
-
-
-
 .menu-holder ul {
   list-style: none;
   display: flex;
@@ -173,98 +170,29 @@
  }
 }
 
-/* Хлебные крошки */
-.breadcrumbs{
-  padding-left: 0;
-  list-style-type: none;
-  overflow: hidden;
-   width: 100%;
-}
-
-.breadcrumbs li{
- float: left;
- margin: 0 .5em 0 1em;
-}
-
-.breadcrumbs a{
-  background: #ddd;
-  padding: .7em 1em;
-  float: left;
-  text-decoration: none;
-  color: #444;
-  text-shadow: 0 1px 0 rgba(255,255,255,.5);
-  position: relative;
-}
-
-.breadcrumbs a:hover{
-  background: #aaccff;
-}
-
-.breadcrumbs a::before{
-  content: "";
-  position: absolute;
-  top: 50%;
-  margin-top: -1.5em;
-  border-width: 1.5em 0 1.5em 1em;
-  border-style: solid;
-  border-color: #ddd #ddd #ddd transparent;
-  left: -1em;
-}
-
-.breadcrumbs a:hover::before{
- border-color: #aaccff #aaccff #aaccff transparent;
-}
-
-.breadcrumbs a::after{
-  content: "";
-  position: absolute;
-  top: 50%;
-  margin-top: -1.5em;
-  border-top: 1.5em solid transparent;
-  border-bottom: 1.5em solid transparent;
-  border-left: 1em solid #ddd;
-  right: -1em;
-}
-
-.breadcrumbs a:hover::after{
-  border-left-color: #aaccff;
-}
-
-.breadcrumbs .current,
-.breadcrumbs .current:hover{
-  font-weight: bold;
-  background: none;
-  padding: .7em 1em;
-}
-
-.breadcrumbs .current::after,
-.breadcrumbs .current::before{
-  content: normal;
-}
-
 /* Таблицы */
 .table-style {
-	border-radius: 8px;
-	border: 2px #d8e2ec solid;
-	border-spacing: 0;
-	overflow: hidden
+  border-radius: 8px;
+  border: 2px #d8e2ec solid;
+  border-spacing: 0;
+  overflow: hidden
 }
 .table-style thead th {
-	text-align: center
+  text-align: center
 }
 .table-style thead tr {
-	font-weight: 700;
-	font-size: 15px;
-	background-color: lightgray
+  font-weight: 700;
+  font-size: 15px;
+  background-color: lightgray
 }
 .table-style tbody tr:nth-of-type(even) {
-	background-color: #f2f2f2
+  background-color: #f2f2f2
 }
 .table-style tbody tr:nth-of-type(odd) {
-	background-color: #fbfbfb
+  background-color: #fbfbfb
 }
 .table-style tbody tr:hover {
-	background-color: #dddbff
+  background-color: #dddbff
 }
 .table-style td {
     padding: 10px;

@@ -3,9 +3,7 @@
   padding-left: 0px;
   margin-bottom: 0px;
 }
-body {
-  font-family: 'Times New Roman', Times, serif;
-}
+
 .reseted-link {
   color: inherit;
   text-decoration: none;
@@ -13,10 +11,6 @@ body {
 .reseted-link:hover {
   text-decoration: none;
   color: inherit;
-}
-.breadcrumbs {
-  border-bottom: solid 1px #999;
-  font-size: 13px;
 }
 #n2-ss-2-placeholder {
   display: none;
@@ -35,9 +29,7 @@ body {
   margin: 5px auto;
   border: 1px solid #12b812;
 }
-body {
-  font-family: 'Times New Roman', Times, serif;
-}
+
 .header-block {
   font-family: 'Century Gothic', sans-serif;
 }
@@ -120,7 +112,7 @@ body {
 .header-block .nav-menu ul li {
   margin-right: 15px;
   text-decoration: underline;
-  font-size: 21px;
+  font-size: 20px;
 }
 @media (max-width: 576px) {
   .header-block .nav-menu ul li a {
@@ -473,42 +465,6 @@ body {
   font-family: 'Century Gothic', sans-serif;
   font-size: 15px;
   color: white;
-}
-.parameters_table {
-  font-family: 'Century Gothic', sans-serif;
-  font-size: 14px;
-}
-.parameters_table span {
-  text-decoration: underline;
-  padding: 7px;
-}
-.parameters_table ul {
-  display: flex;
-  list-style: none;
-  padding-left: 0px;
-  margin-bottom: 0px;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 7px 0px;
-}
-.parameters_table ul li {
-  border: 1px solid black;
-  text-align: center;
-  background: none;
-  /*
-            &:nth-child(2n){
-                width: 30%;
-                border-bottom: none;
-            }
-            &:nth-child(-n+2){
-                background: #69f;
-                color: #fff;
-            }*/
-}
-.parameters_table ul li:nth-child(2n+1) {
-  width: 70%;
-  border-bottom: none;
-  border-right: none;
 }
 .about_company {
   font-family: 'Century Gothic', sans-serif;

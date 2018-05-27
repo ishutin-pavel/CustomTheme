@@ -1,19 +1,28 @@
 //Команда запуска sass:
 //#sass --watch sass/style.scss:style.css --style compressed
+
+/* !!! Don't edit style.css
+* It is generated via SASS and your changes will be deleted.
+* Add your styles -> "Appearance - Customize - Additional styles
+*/
+
 /*
-Theme Name: Завод кранов
+Theme Name: Zavod Kranov
 Theme URI: https://zavodkranov.ru/
 Author: Ishutin Pavel
 Author URI: https://xn--h1aapse3a.xn--p1ai/
-Description: Тема разрабатывается для компании Атлант
+Description: Atlant Company
 Version: 1.0
-Text Domain: zavodkranov
+Text Domain: zavodkranov.ru
 */
-@import '_custom-style';
-@import '_style1';
-@import '_styles2';
-@import '_page-styles';
-@import '_category-styles';
 
-@import 'normalize';
-@import 'bootstrap.min';
+//css
+// @import 'normalize';
+@import 'bootstrap';
+
+@import 'custom-style';
+@import 'style1';
+@import 'styles2';
+@import 'page-styles';
+@import 'category-styles';
+@import 'breadcrumbs';

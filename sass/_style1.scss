@@ -1,6 +1,10 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin-top:4px !important;
+}
+
 h1,
-#page-container h1,
-.tab-content h1 { font-size: 42pt; text-align: center;}
+#page-container h1, .tab-content h1 { font-size: 42pt; text-align: center; }
 
 h2, #page-container h2, .tab-content h2 {
   padding: 0.5em;
@@ -34,7 +38,20 @@ h4, #page-container h4, .tab-content h4 {
   font-weight: 400;
 }
 
-p {font-family: 'Times New Roman', Times, serif;}
+@media only screen and (max-width : 480px) {
+  h1, #page-container h1, .tab-content h1 { font-size: 34pt; }
+  h2, #page-container h2, .tab-content h2 { font-size: 18pt; }
+  h3, #page-container h3, .tab-content h3 { font-size: 15pt; }
+  h4, #page-container h4, .tab-content h4 { font-size: 12pt; }
+}
+
+
+a {
+  &:link { color: #026eb6; text-decoration: none; }
+  &:visited { color: #026eb6; text-decoration: none; }
+  &:hover { color: #ff4444; text-decoration: underline; }
+  &:active { color: #026eb6; text-decoration: none; }
+}
 
 @media(max-width:992px){
   .n2-ss-section-main-content n2-ss-layer-content{
@@ -67,9 +84,7 @@ p {font-family: 'Times New Roman', Times, serif;}
     text-align: center;
     margin-bottom: 0;
   }
-  body {
-    font-family: 'Times New Roman', Times, serif;
-  }
+
   .header-block {
   font-family: 'Times New Roman', Times, serif;
   }
@@ -306,37 +321,12 @@ p {font-family: 'Times New Roman', Times, serif;}
     font-size: 15px;
     color: white;
   }
-  .parameters_table {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 14px;
+
+  .parameters__table {
+    width: 100%;
+    text-align: left;
   }
-  .parameters_table span {
-    text-decoration: underline;
-    padding: 7px;
-  }
-  .parameters_table ul {
-    display: flex;
-    list-style: none;
-    padding-left: 0px;
-    margin-bottom: 0px;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 7px 0px;
-  }
-  .parameters_table ul li {
-    border: 1px solid black;
-    text-align: center;
-    background: #acf;
-  }
-  .parameters_table ul li:nth-child(2n+1) {
-    width: 70%;
-    border-bottom: none;
-    border-right: none;
-  }
-  .parameters_table ul li:nth-child(2n) {
-    width: 30%;
-    border-bottom: none;
-  }
+
   .about_company {
     font-family: 'Times New Roman', Times, serif;
     font-size: 14px;
@@ -416,17 +406,6 @@ p {font-family: 'Times New Roman', Times, serif;}
     background-color: #ea1d24!important;
     border-color: transparent!important;
   }
-  .parameters_table ul{
-    border-bottom: 1px solid black;
-  }
-  .breadcrumbs{
-    font-size: 13px!important;
-    margin-bottom: 0px;
-    border-bottom: solid 1px #999;
-  }
-  .goods_properties{
-    margin-top:10px;
-  }
 #n2-ss-2-placeholder{
   display: none;
 }
@@ -434,13 +413,7 @@ p {font-family: 'Times New Roman', Times, serif;}
 .n2-ss-margin #n2-ss-2-align .n2-padding #n2-ss-2 .n2-ss-slider-1 .n2-ow{
   text-shadow: 1px 1px 3px #000!important;
 }
-body{
-  margin-top:4px!important;
-}
-.breadcrumbs_container{
-  padding-left: 0px!important;
-  padding-right: 0px!important;
-}
+
 .seo-current-cut-text p {
   padding: 0 0.5em 0.5em 0.5em;
 }
@@ -546,7 +519,7 @@ body{
 .cat-description ul,
 .tab-content ul {
   list-style: none;
-  padding: 15px 0 15px 30px;
+  padding: 15px 0 15px 20px;
 }
 
 .mark-list li,
