@@ -458,3 +458,25 @@ function my_cyr_to_lat_table($ctl_table) {
   return $ctl_table;
 }
 add_filter('ctl_table', 'my_cyr_to_lat_table');
+
+//Замена концовки обрезанной статьи с [...] на ...
+function new_excerpt_more( $more ) {
+return ' ...';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
+
+/**
+ *  Bootstrap Pagination for WordPress
+ */
+if( file_exists( get_template_directory() . '/inc/wp_bootstrap_pagination.php' )){
+  require_once get_template_directory() . '/inc/wp_bootstrap_pagination.php';
+}
+
+//Убрать слово "Category:" из заголовка
+add_filter( 'get_the_archive_title', function ( $title ) {
+    if( is_category() ) {
+        $title = single_cat_title( '', false );
+    }
+    return $title;
+});

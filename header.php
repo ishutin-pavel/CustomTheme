@@ -43,9 +43,9 @@
 			<div class="nav-menu">
 				<ul>
 					<li><a href="/about"><nobr>О компании</nobr></a></li>
-					<li><a href="/">Продукция</a></li><!-- 
-					<li><a href="/articles">Статьи</a></li>
-					<li><a href="/news">Новости</a></li> -->
+					<li><a href="/">Продукция</a></li>
+					<!-- <li><a href="/articles">Статьи</a></li> -->
+					<li><a href="/news">Новости</a></li>
 					<li><a href="/contacts">Контакты</a></li>
 				</ul>
 			</div>
