@@ -7984,9 +7984,6 @@ a:active {
   font-size: 17px;
   letter-spacing: -0.5px; }
 
-.header-block .nav-menu ul li:nth-child(2) {
-  margin-right: 22px; }
-
 @media (max-width: 768px) {
   .header-block .phones {
     display: none; } }
