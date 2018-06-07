@@ -7921,25 +7921,20 @@ a:active {
 .reseted-link {
   color: inherit;
   text-decoration: none; }
-
-.reseted-link:hover {
-  text-decoration: none;
-  color: inherit; }
+  .reseted-link:hover {
+    text-decoration: none;
+    color: inherit; }
 
 .reseted_p {
   margin-bottom: 0px; }
 
 .page_title {
-  font-family: 'Times New Roman', Times, serif;
   padding: 8px;
   font-size: 1.32em;
   line-height: 1.5em;
   border-bottom: solid 1px #999;
   text-align: center;
   margin-bottom: 0; }
-
-.header-block {
-  font-family: 'Times New Roman', Times, serif; }
 
 .header-block a {
   color: inherit;
@@ -7984,9 +7979,6 @@ a:active {
   font-size: 17px;
   letter-spacing: -0.5px; }
 
-.header-block .nav-menu ul li:nth-child(2) {
-  margin-right: 22px; }
-
 @media (max-width: 768px) {
   .header-block .phones {
     display: none; } }
@@ -8007,21 +7999,41 @@ a:active {
   display: flex;
   justify-content: flex-end;
   align-items: center; }
+  @media (max-width: 768px) {
+    .header-block .socials {
+      justify-content: center;
+      margin-top: 5px; } }
 
-@media (max-width: 768px) {
-  .header-block .socials {
-    justify-content: center;
-    margin-top: 5px; } }
 .header-block .socials img {
   max-width: 24px; }
+
+.header-block .socials .icon {
+  margin-right: 7px; }
 
 .header-block .socials .zapros {
   border-radius: 3px;
   color: #fff;
   text-decoration: none;
-  background: #1c9bef;
+  background: #12b812;
   padding: 2px 5px; }
+  .header-block .socials .zapros:hover {
+    color: white !important;
+    text-decoration: none !important; }
 
+.header-block .socials .zapros2 {
+  border-radius: 3px;
+  color: #fff;
+  text-decoration: none;
+  background: #f32317;
+  padding: 2px 5px;
+  margin-left: 10px; }
+  .header-block .socials .zapros2:hover {
+    color: white !important;
+    text-decoration: none !important; }
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .socials__links {
+    display: none; } }
 .stall a:hover {
   text-decoration: none;
   color: inherit; }
@@ -8060,15 +8072,11 @@ a:active {
   margin-bottom: 0px; }
 
 /* stall item styles */
-.stall_inner .breadcrumbs_container {
-  font-family: 'Times New Roman', Times, serif; }
-
 .stall_inner .breadcrumbs_container div {
   width: 100%;
   font-size: 0.9em;
   line-height: 1.5em;
   text-indent: 0.64em;
-  /*border-bottom: 1px solid #999;*/
   overflow: hidden; }
 
 .stall_inner .card_item .link > div:nth-child(1) {
@@ -8089,20 +8097,6 @@ a:active {
   padding-left: 0px;
   margin-bottom: 0px; }
 
-/*.stall_inner .card_item ul li:nth-child(2) {
-  font-size: 13px;
-  padding: 0 8px 8px 8px;
-}
-.stall_inner .card_item ul li:nth-child(1) {
-  padding-left: 8px;
-  padding-bottom: 7px;
-  font-size: 14px;
-  text-decoration: underline;
-  color: #026eb6;
-}
-.stall_inner .card_item ul li:nth-child(1):hover {
-  color: #ea1d24;
-}*/
 .goods_properties .properties_table {
   font-family: 'Times New Roman', Times, serif;
   font-size: 15px; }
@@ -8494,7 +8488,6 @@ hr {
   margin-bottom: 0px; }
 
 .page_title {
-  font-family: 'Century Gothic', sans-serif;
   padding: 8px;
   font-size: 1.8em;
   font-weight: bold;
@@ -8503,9 +8496,6 @@ hr {
   text-align: center;
   margin: 5px auto;
   border: 1px solid #12b812; }
-
-.header-block {
-  font-family: 'Century Gothic', sans-serif; }
 
 .header-block a {
   color: inherit;
@@ -8577,7 +8567,7 @@ hr {
 @media (max-width: 576px) {
   .header-block .nav-menu ul li a {
     font-size: 13px;
-    margin-right: 15px; } }
+    margin-right: 5px; } }
 .header-block .phones {
   margin-top: 4px; }
 
@@ -8604,46 +8594,6 @@ hr {
   color: #000;
   font-size: 1.20em; }
 
-.header-block .socials {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center; }
-
-@media (max-width: 768px) {
-  .header-block .socials {
-    justify-content: center;
-    margin-top: 5px; } }
-.header-block .socials img {
-  max-width: 24px; }
-
-.header-block .socials .icon {
-  /*border: solid 1px #1c9bef;
-            border-radius: 3px;*/
-  margin-right: 7px; }
-
-.header-block .socials .zapros {
-  border-radius: 3px;
-  color: #fff;
-  text-decoration: none;
-  background: #12b812;
-  padding: 2px 5px; }
-
-.header-block .socials .zapros:hover {
-  color: white !important;
-  text-decoration: none !important; }
-
-.header-block .socials .zapros2 {
-  border-radius: 3px;
-  color: #fff;
-  text-decoration: none;
-  background: #f32317;
-  padding: 2px 5px;
-  margin-left: 10px; }
-
-.header-block .socials .zapros2:hover {
-  color: white !important;
-  text-decoration: none !important; }
-
 @media (min-width: 1199px) {
   .header-block .contact_info {
     padding-right: 55px; } }
@@ -8665,7 +8615,6 @@ hr {
   margin: 5px 0px;
   color: inherit;
   text-decoration: none;
-  font-family: 'Century Gothic', sans-serif;
   justify-content: center; }
 
 @media (max-width: 420px) {
@@ -8750,7 +8699,6 @@ hr {
   display: flex;
   justify-content: center;
   border-top: 1px solid grey;
-  font-family: 'Century Gothic', sans-serif;
   margin: 1em 0;
   font-size: 0.9em;
   text-align: center; }
@@ -8766,8 +8714,7 @@ hr {
 /* stall item styles */
 .stall_inner .breadcrumbs_container {
   padding-left: 0px;
-  padding-right: 0px;
-  font-family: 'Century Gothic', sans-serif; }
+  padding-right: 0px; }
 
 .stall_inner .breadcrumbs_container div {
   width: 100%;
@@ -8813,7 +8760,6 @@ hr {
   color: inherit; }
 
 .stall_inner .card_item .main-ul {
-  font-family: 'Times New Roman', Times, serif;
   list-style: none;
   padding-left: 0px;
   margin-bottom: 0px; }
@@ -8838,7 +8784,6 @@ hr {
   text-decoration: underline; }
 
 .goods_properties .properties_table {
-  font-family: 'Century Gothic', sans-serif;
   font-size: 14px; }
 
 .goods_properties .properties_table p {
@@ -8893,12 +8838,10 @@ hr {
   width: 100% px; }
 
 .product_menu .nav-tabs .nav-item a {
-  font-family: 'Century Gothic', sans-serif;
   font-size: 15px;
   color: white; }
 
 .about_company {
-  font-family: 'Century Gothic', sans-serif;
   font-size: 14px; }
 
 .about_company .title {
@@ -8913,11 +8856,9 @@ hr {
   padding: 0 7px 7px 7px; }
 
 .contacts .contact_phones {
-  font-family: 'Century Gothic', sans-serif;
   font-size: 14px; }
 
 .contacts .contact_phones h2 {
-  font-family: 'Century Gothic', sans-serif;
   font-size: 14px;
   padding: 7px;
   text-decoration: underline;
@@ -8976,7 +8917,6 @@ hr {
   max-width: 100%; }
 
 .request .button ul {
-  font-family: 'Century Gothic', sans-serif;
   font-size: 14px;
   list-style: none;
   padding-left: 0px;
@@ -9032,7 +8972,6 @@ hr {
   color: #666;
   font-size: 1em;
   line-height: 1.34em;
-  font-family: 'Century Gothic', sans-serif;
   font-weight: 200; }
 
 /* SLIDER RESPONSIVE HACKS */
@@ -9438,6 +9377,8 @@ ul.nav-tabs li.active-page {
   margin-top: 15px;
   border-bottom: 1px solid #efefef;
   padding-bottom: 15px; }
+  .catNews__item:last-child {
+    border: none; }
 
 .catNews__img {
   text-align: center; }

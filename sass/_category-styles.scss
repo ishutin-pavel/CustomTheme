@@ -179,7 +179,9 @@ ul.nav-tabs li.active-page {
   margin-top: 15px;
   border-bottom: 1px solid #efefef;
   padding-bottom: 15px;
+  &:last-child { border: none; }
 }
+
 .catNews__img {
   text-align: center;
   img { max-width: 100%; height: auto; }
@@ -189,12 +191,7 @@ ul.nav-tabs li.active-page {
   margin-left: -2px;
   padding:0;
   text-align: left;
-  a {
-    color: #212529;
-    // border-bottom: 1px solid #212529;
-    // &:hover {text-decoration: none;}
-  }
-  
+  a { color: #212529; }
 }
 
 .catNews__desc {

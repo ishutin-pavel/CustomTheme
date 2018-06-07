@@ -63,11 +63,13 @@
 				</div>
 
 				<div class="socials">
-					<a href="https://vk.com/zavodkranov" target="_blank" class="icon"><img src="/wp-content/uploads/2018/01/vk.png" alt=""></a>
-					<a href="https://twitter.com/zavodkranov1" target="_blank" class="icon"><img src="/wp-content/uploads/2018/01/twit.png" alt=""></a>
-					<a href="https://www.instagram.com/zavodkranov.ru/" target="_blank" class="icon"><img src="/wp-content/uploads/2018/01/insta.png" alt=""></a>
-					<a href="https://www.youtube.com/channel/UC1E0eY3xsMFADus5is-xS1Q" target="_blank" class="icon"><img src="/wp-content/uploads/2018/01/youtobe.png" alt=""></a>
-					<a href="https://www.facebook.com/groups/158952221479314" target="_blank" class="icon"><img src="/wp-content/uploads/2018/03/Facebook-1.png" alt=""></a>
+					<span class="socials__links">
+						<a href="https://vk.com/zavodkranov" target="_blank" class="icon"><img src="/wp-content/uploads/2018/01/vk.png" alt=""></a>
+						<a href="https://twitter.com/zavodkranov1" target="_blank" class="icon"><img src="/wp-content/uploads/2018/01/twit.png" alt=""></a>
+						<a href="https://www.instagram.com/zavodkranov.ru/" target="_blank" class="icon"><img src="/wp-content/uploads/2018/01/insta.png" alt=""></a>
+						<a href="https://www.youtube.com/channel/UC1E0eY3xsMFADus5is-xS1Q" target="_blank" class="icon"><img src="/wp-content/uploads/2018/01/youtobe.png" alt=""></a>
+						<a href="https://www.facebook.com/groups/158952221479314" target="_blank" class="icon"><img src="/wp-content/uploads/2018/03/Facebook-1.png" alt=""></a>
+					</span>
 					<a href="/onlajn-zapros" class="zapros">Онлайн запрос</a>
 					<a href="/ostavit-zayavku" class="zapros2">Оставить заявку</a>
 				</div>
