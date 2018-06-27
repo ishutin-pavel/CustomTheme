@@ -9090,6 +9090,9 @@ input.wpcf7-form-control.wpcf7-submit {
   text-decoration: underline;
   color: #ff4444; }
 
+.menu-holder {
+  margin-top: 30px; }
+
 .menu-holder ul {
   list-style: none;
   display: flex;
