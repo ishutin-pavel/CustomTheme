@@ -151,6 +151,13 @@ _tmr.push({id: "2943199", type: "pageView", start: (new Date()).getTime()});
 <img src="//top-fwz1.mail.ru/counter?id=2943199;js=na" style="border:0;position:absolute;left:-9999px;" alt="" />
 </div></noscript>
 <!-- //Rating@Mail.ru counter -->
-
+<script>
+(function(w, d, s, h, id) {
+    w.roistatProjectId = id; w.roistatHost = h;
+    var p = d.location.protocol == "https:" ? "https://" : "http://";
+    var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/"+id+"/init";
+    var js = d.createElement(s); js.charset="UTF-8"; js.async = 1; js.src = p+h+u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
+})(window, document, 'script', 'cloud.roistat.com', '6caeb59f9e1d3055f8200f2beeacc465');
+</script>
 </body>
 </html>
