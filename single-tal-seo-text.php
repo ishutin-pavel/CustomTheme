@@ -4,7 +4,7 @@
  *
  * @package WordPress
  */
-get_header(); 
+get_header();
 
 function getCurrentCatID(){
   global $wp_query;
@@ -20,19 +20,13 @@ function category_has_parent($catid){
   }
   return false;
 }
-?>
-<?php 
+
 $this_post = get_the_category();
 //print_r($this_post);
 //echo $this_post[0]->name;
-?>
- 
-<?php 
-echo do_shortcode('[smartslider3 slider=2]');
-?>
- 
-  <?php
-	  while ( have_posts() ) : the_post();?>
+
+
+    while ( have_posts() ) : the_post();?>
     <!-- standart-template -->
         <?php
         //print_r($this_post->name);
@@ -54,9 +48,6 @@ echo do_shortcode('[smartslider3 slider=2]');
                 //print_r($subCategories);
               ?>
 
-              <?php 
-              echo do_shortcode('[smartslider3 slider=2]');
-              ?>
                 <div class="container stall_inner">
                 <div class="row">
                   <div class="col-lg-1"></div>

@@ -7,9 +7,7 @@
  */
 
 get_header(); ?>
-<?php 
-echo do_shortcode('[smartslider3 slider=2]');
-?>
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<div class="container">

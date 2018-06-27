@@ -23,11 +23,9 @@ function category_has_parent($catid){
 }
 
 $this_post = get_the_category();
-?>
 
-<?php echo do_shortcode('[smartslider3 slider=2]'); ?>
 
-<?php
+
 	while ( have_posts() ) : the_post();
 	// standart-template
 	if( strpos($this_post[0]->name, 'текст') !== false){
@@ -53,8 +51,6 @@ $this_post = get_the_category();
 
 		$terms = get_terms($args);
 ?>
-
-<?php echo do_shortcode('[smartslider3 slider=2]'); ?>
 
 							<div class="container stall_inner">
 								<div class="row">

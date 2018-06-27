@@ -47,8 +47,8 @@ sup {font-weight:700; font-size:0.8em;}
 					overflow: scroll;
 		}
 }
-		</style>
-<?php echo do_shortcode('[smartslider3 slider=2]'); ?>
+</style>
+
 
 	<?php
 		while ( have_posts() ) : the_post();?>
@@ -79,9 +79,6 @@ sup {font-weight:700; font-size:0.8em;}
 								$terms = get_terms($args);
 								?>
 
-							<?php 
-							echo do_shortcode('[smartslider3 slider=2]');
-							?>
 								<div class="container stall_inner">
 								<div class="row">
 									<div class="col-lg-1"></div>

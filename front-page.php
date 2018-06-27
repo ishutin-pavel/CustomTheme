@@ -19,10 +19,6 @@ $catlist = get_terms('category',$args);
 $catlist = array_reverse($catlist);
 ?>
 
-<?php 
-echo do_shortcode('[smartslider3 slider=2]');
-?>
-
 <div class="container title_of_page">
     <div class="row">
         <div class="col-xl-1 col-lg-0"></div>

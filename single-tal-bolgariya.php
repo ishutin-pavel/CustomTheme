@@ -37,12 +37,9 @@ $this_post = get_the_category();
     justify-content: center;
 }
 </style>
-<?php 
-echo do_shortcode('[smartslider3 slider=2]');
-?>
 
   <?php
-	  while ( have_posts() ) : the_post();?>
+    while ( have_posts() ) : the_post();?>
     <!-- standart-template -->
         
             <!-- Details_template -->
@@ -345,7 +342,7 @@ echo do_shortcode('[smartslider3 slider=2]');
               <h2>Описание</h2> 
               <div class="opisaniya">
                 <!-- D -->
-                							<?php $check = true; ?>
+                              <?php $check = true; ?>
                                             <?php if( have_rows('art+price') ): ?>
                                               <?php while( have_rows('art+price') ): the_row(); $check = false;?>
                                                   <?php $desc_temp = get_sub_field('описание');?>
@@ -362,11 +359,11 @@ echo do_shortcode('[smartslider3 slider=2]');
                                             <?php endif; ?>
                                             <?php if($check): ?>
                                             <?php if(get_field('description')): ?>
-                                            	<div>
+                                              <div>
                                                     <?php echo  get_field('description');  ?>     
                                                     </div> 
-                                            	<?php endif; ?>
-                                            	<?php endif; ?>
+                                              <?php endif; ?>
+                                              <?php endif; ?>
                                             <!-- ./D -->
               </div>
               

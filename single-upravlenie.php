@@ -34,12 +34,9 @@ $this_post = get_the_category();
 //echo $this_post[0]->name;
 ?>
 
-<?php 
-echo do_shortcode('[smartslider3 slider=2]');
-?>
 
   <?php
-	  while ( have_posts() ) : the_post();?>
+    while ( have_posts() ) : the_post();?>
     <!-- standart-template -->
         <?php
         //print_r($this_post->name);
@@ -68,9 +65,6 @@ echo do_shortcode('[smartslider3 slider=2]');
                 $terms = get_terms($args);
                 ?>
 
-              <?php 
-              echo do_shortcode('[smartslider3 slider=2]');
-              ?>
                 <div class="container stall_inner">
                 <div class="row">
                   <div class="col-lg-1"></div>

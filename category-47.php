@@ -14,9 +14,9 @@
 		}
 		return false;
 	}
-?>	
-<?php $rootCategory = getCurrentCatID();
-echo do_shortcode('[smartslider3 slider=2]');
+
+$rootCategory = getCurrentCatID();
+
 ?>
 
 	<div class="container stall_inner">

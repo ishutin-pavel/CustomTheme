@@ -8,8 +8,9 @@
  */
 
 get_header();
-echo do_shortcode('[smartslider3 slider=2]');
+
 ?>
+
 <div class="container stall_inner">
 	<div class="row">
 		<div class="col-xl-1 col-lg-1"></div>

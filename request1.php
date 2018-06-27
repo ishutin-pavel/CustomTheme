@@ -2,9 +2,6 @@
 /* Template Name: Zapros-1*/
 get_header(); ?>
 
-<?php 
-echo do_shortcode('[smartslider3 slider=2]');
-?>
 <style>
     table {background:#000; text-align:center; border-spacing:1px; margin:0.5em 0;     border-collapse: unset!important;}
     sup {font-weight:700; font-size:0.8em;}
