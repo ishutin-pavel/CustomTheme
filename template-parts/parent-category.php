@@ -179,7 +179,7 @@ if($rootCategory == 11){
 		$categories = get_categories( array(
 			'orderby' => 'name',
 			'hide_empty' => false,
-			'include' => '55,56,60',
+			'include' => '55,56,60,67',
 			'parent'  => 14
 		) );
 		//print_r($categories);

@@ -9246,11 +9246,22 @@ input.wpcf7-form-control.wpcf7-submit {
   .n2-ss-section-main-content .n2-ss-layer-content {
     padding: 0.625em 2.625em 0.625em 4.6875em !important; } }
 /* ╨в╨░╨▒╨╗╨╕╤Ж╤Л */
+.table__wrap {
+  overflow: auto; }
+
+caption {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  color: #212529;
+  text-align: right;
+  font-weight: bold;
+  caption-side: top; }
+
 .table-style {
   border-radius: 8px;
   border: 2px #d8e2ec solid;
   border-spacing: 0;
-  overflow: hidden; }
+  width: 100%; }
 
 .table-style thead th {
   text-align: center; }
