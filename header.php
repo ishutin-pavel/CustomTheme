@@ -23,9 +23,9 @@
 <div class="container">
 	<div class="row header-block">
 
-		<div class="col-xl-1 col-lg-0 col-md-0 col-sm-0 col-xs-0"></div>
+		<div class="col-xs-0  col-sm-0  col-md-0 col-lg-0 col-xl-1"></div>
 
-		<div class="col-xl-5 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-5">
 
 			<div class="logo">
 				<a href="/">
@@ -42,17 +42,18 @@
 
 			<div class="nav-menu">
 				<ul>
-					<li><a href="/about"><nobr>О компании</nobr></a></li>
+					<!-- <li><a href="/about"><nobr>О компании</nobr></a></li> -->
 					<li><a href="/">Продукция</a></li>
 					<!-- <li><a href="/articles">Статьи</a></li> -->
 					<li><a href="/news">Новости</a></li>
+					<li><a href="/blog">Блог</a></li>
 					<li><a href="/contacts">Контакты</a></li>
 				</ul>
 			</div>
 
 		</div><!-- .col -->
 
-		<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
 
 			<div class="contact_info">
 

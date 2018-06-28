@@ -26,6 +26,8 @@ if ( in_category('20') ) {
 	include(TEMPLATEPATH.'/single-tal-bolgariya.php');
 } else if ( in_category('58') ) {
 	include(TEMPLATEPATH.'/single-news.php');
+} else if ( in_category('69') ) {
+	include(TEMPLATEPATH.'/single-blog.php');
 } else {
 		include(TEMPLATEPATH.'/single-default.php');
 }
