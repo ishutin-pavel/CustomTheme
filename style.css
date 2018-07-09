@@ -9358,10 +9358,7 @@ caption {
   line-height: 1.125em; }
 
 .tab-content {
-  font-family: Century Gothic, sans-serif;
-  text-align: justify;
-  line-height: 1.4em;
-  font-size: 0.9em; }
+  text-align: justify; }
 
 @media (max-width: 1024px) {
   .tab-content {
