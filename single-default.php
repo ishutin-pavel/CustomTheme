@@ -272,14 +272,11 @@ $this_post = get_the_category();
 														<div class="col-xl-1 col-lg-0"></div>
 														<div class="col-xl-10 col-lg-12">
 														<ul class="nav nav-tabs" role="tablist">
-						<?php 
-							if(get_field('description'))
-							{ ?>
+
 								<li class="nav-item">
 									<a class="nav-link active" href="#description2" role="tab" data-toggle="tab">Описание</a>
 								</li>
-							<?php }
-						?>
+
 
 						<?php 
 							if(get_field('parametrs'))
