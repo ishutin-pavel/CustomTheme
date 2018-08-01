@@ -7861,7 +7861,6 @@ h2, #page-container h2, .tab-content h2 {
   padding: 0.5em;
   font-size: 22pt;
   line-height: 1.125em;
-  clear: both;
   text-transform: uppercase;
   text-align: center; }
 
