@@ -8378,6 +8378,7 @@ hr {
 /*╨Э╤Г╨╝╨╡╤А╨╛╨▓╨░╨╜╨╜╤Л╨╡ ╤Б╨┐╨╕╤Б╨║╨╕ */
 .num-list,
 .cat-description ol,
+.entry-content ol,
 .seo-current-cut-text ol,
 .tab-content ol {
   counter-reset: li;
@@ -8388,6 +8389,7 @@ hr {
 
 .num-list li,
 .cat-description ol li,
+.entry-content ol li,
 .seo-current-cut-text ol li,
 .tab-content ol li {
   position: relative;
@@ -8402,18 +8404,21 @@ hr {
 
 .num-list li:hover,
 .cat-description ol li:hover,
+.entry-content ol li:hover,
 .seo-current-cut-text ol li:hover,
 .tab-content ol li:hover {
   background: #DCDDE1; }
 
 .num-list li:hover:before,
 .cat-description ol li:hover:before,
+.entry-content ol li:hover:before,
 .seo-current-cut-text ol li:hover:before,
 .tab-content ol li:hover:before {
   transform: rotate(360deg); }
 
 .num-list li:before,
 .cat-description ol li:before,
+.entry-content ol li:before,
 .seo-current-cut-text ol li:before,
 .tab-content ol li:before {
   content: counter(li);
@@ -8437,6 +8442,7 @@ hr {
 /* ╨Ь╨░╤А╨║╨╕╤А╨╛╨▓╨░╨╜╨╜╤Л╨╣ ╤Б╨┐╨╕╤Б╨╛╨║ */
 .mark-list,
 .cat-description ul,
+.entry-content ul,
 .seo-current-cut-text ul,
 .tab-content ul {
   list-style: none;
@@ -8444,6 +8450,7 @@ hr {
 
 .mark-list li,
 .cat-description ul li,
+.entry-content ul li,
 .seo-current-cut-text ul li,
 .tab-content ul li {
   padding: 7px 20px;
@@ -8456,18 +8463,21 @@ hr {
 
 .mark-list li,
 .cat-description ul li,
+.entry-content ul li,
 .seo-current-cut-text ul li,
 .tab-content ul li {
   border-color: #026eb6; }
 
 .mark-list li:hover,
 .cat-description ul li:hover,
+.entry-content ul li:hover,
 .seo-current-cut-text ul li:hover,
 .tab-content ul li:hover {
   border-left: 10px solid transparent; }
 
 .mark-list li:hover,
 .cat-description ul li:hover,
+.entry-content ul li:hover,
 .seo-current-cut-text ul li:hover,
 .tab-content ul li:hover {
   border-right: 10px solid #026eb6; }
