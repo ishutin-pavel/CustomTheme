@@ -15,8 +15,11 @@ get_header();
 	<div class="row">
 		<div class="col-xl-1 col-lg-1"></div>
 			<div class="col-xl-10 col-lg-12">
-					<div class="breadcrumbs_container">
-						<?php if (function_exists('dimox_breadcrumbs')) dimox_breadcrumbs(); ?>
+					<div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
+							<?php if(function_exists('bcn_display'))
+							{
+									bcn_display();
+							}?>
 					</div>
 
 		<?php

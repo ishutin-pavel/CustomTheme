@@ -3,9 +3,9 @@
 get_header(); ?>
 
 <style>
-    table {background:#000; text-align:center; border-spacing:1px; margin:0.5em 0;     border-collapse: unset!important;}
-    sup {font-weight:700; font-size:0.8em;}
-    textarea{ resize:none; margin: 0px; padding: 2px; width:100%; height:28px; font-size:1em; overflow:hidden;}
+		table {background:#000; text-align:center; border-spacing:1px; margin:0.5em 0;     border-collapse: unset!important;}
+		sup {font-weight:700; font-size:0.8em;}
+		textarea{ resize:none; margin: 0px; padding: 2px; width:100%; height:28px; font-size:1em; overflow:hidden;}
 	.th td, .th th {background:#69f; color:#fff;}
 	th {padding:0.125em 0.5em; background:#acf; font-weight:400; }
 	td {padding:0.125em 0.5em; background:#cdf;}
@@ -22,29 +22,32 @@ get_header(); ?>
 	.pric input {width:100%; height:100%; border:none; padding:0; margin:0; text-align:center;}
 	input::-webkit-outer-spin-button,
 	input::-webkit-inner-spin-button {
-	    -webkit-appearance: none;
-	    margin: 0;
+			-webkit-appearance: none;
+			margin: 0;
 	}
 	form{
 		overflow: scroll;
 	}
 </style>
 <div class="container">
-    <div class="row">
+		<div class="row">
 		<div class="col-lg-1 col-md-1"></div>
-        <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
-        <?php
+				<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+				<?php
 				// Start the Loop.
 			while ( have_posts() ) :
-                the_post();?>
-                <div class="common-header"><?php the_title(); ?></div>
-                <div class="col-lg-12 breadcrumbs_container">
-                    <div>
-                        <?php if (function_exists('dimox_breadcrumbs')) dimox_breadcrumbs(); ?>
-                    </div>
-                </div>
+								the_post();?>
+								<div class="col-lg-12 breadcrumbs_container">
+									<div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
+											<?php if(function_exists('bcn_display'))
+											{
+													bcn_display();
+											}?>
+									</div>
+									<div class="common-header"><?php the_title(); ?></div>
+								</div>
 			<div id="page-container">
-                <?php
+								<?php
 				// Include the page content template.
 				the_content();
 				endwhile;
@@ -52,6 +55,6 @@ get_header(); ?>
 			</div>
 		</div>
 		<div class="col-lg-1 col-md-1"></div>
-    </div>
+		</div>
 </div>
 <?php get_footer(); ?>

@@ -17,7 +17,12 @@ get_header();
 			<div class="col-xl-10 col-lg-12">
 				<div class="row">
 					<div class="col-lg-12 breadcrumbs_container">
-						<?php if (function_exists('dimox_breadcrumbs')) dimox_breadcrumbs(); ?>
+						<div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
+								<?php if(function_exists('bcn_display'))
+								{
+										bcn_display();
+								}?>
+						</div>
 						<?php the_archive_title( '<h1 class="page_title">', '</h1>' ); ?>
 					</div>
 				</div>

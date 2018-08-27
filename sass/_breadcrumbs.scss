@@ -7,11 +7,12 @@
   width: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
-  padding-left: 0;
+  padding-left: 13px;
   list-style-type: none;
   overflow: hidden;
   font-size: 13px;
   border-bottom: solid 1px #999;
+  font-family: 'Century Gothic', sans-serif;
 }
 
 .breadcrumbs li{
@@ -19,10 +20,11 @@
  margin: 0 .5em 0 1em;
 }
 
-.breadcrumbs a{
-  background: #ddd;
+.breadcrumbs a {
+  display: inline-block;
+  margin-right: 20px;
   padding: .7em 1em;
-  float: left;
+  background: #ddd;
   text-decoration: none;
   color: #444;
   text-shadow: 0 1px 0 rgba(255,255,255,.5);

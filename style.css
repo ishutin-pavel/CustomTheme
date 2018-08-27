@@ -8058,17 +8058,6 @@ a:active {
   margin-bottom: 0px; }
 
 /* stall item styles */
-.stall_inner .breadcrumbs_container {
-  font-family: 'Times New Roman', Times, serif; }
-
-.stall_inner .breadcrumbs_container div {
-  width: 100%;
-  font-size: 0.9em;
-  line-height: 1.5em;
-  text-indent: 0.64em;
-  /*border-bottom: 1px solid #999;*/
-  overflow: hidden; }
-
 .stall_inner .card_item .link > div:nth-child(1) {
   border-right: 1px solid grey;
   width: 25%;
@@ -8773,18 +8762,6 @@ hr {
   margin-bottom: 0px; }
 
 /* stall item styles */
-.stall_inner .breadcrumbs_container {
-  padding-left: 0px;
-  padding-right: 0px;
-  font-family: 'Century Gothic', sans-serif; }
-
-.stall_inner .breadcrumbs_container div {
-  width: 100%;
-  font-size: 0.9em;
-  line-height: 1.5em;
-  text-indent: 0.64em;
-  overflow: hidden; }
-
 .stall_inner .card_item {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
@@ -9565,20 +9542,22 @@ ul.nav-tabs li.active-page {
   width: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
-  padding-left: 0;
+  padding-left: 13px;
   list-style-type: none;
   overflow: hidden;
   font-size: 13px;
-  border-bottom: solid 1px #999; }
+  border-bottom: solid 1px #999;
+  font-family: 'Century Gothic', sans-serif; }
 
 .breadcrumbs li {
   float: left;
   margin: 0 .5em 0 1em; }
 
 .breadcrumbs a {
-  background: #ddd;
+  display: inline-block;
+  margin-right: 20px;
   padding: .7em 1em;
-  float: left;
+  background: #ddd;
   text-decoration: none;
   color: #444;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);

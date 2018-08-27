@@ -85,7 +85,12 @@ sup {font-weight:700; font-size:0.8em;}
 										<div class="col-lg-10">
 											<div class="row">
 												<div class="col-lg-12 breadcrumbs_container">
-													<?php if (function_exists('dimox_breadcrumbs')) dimox_breadcrumbs(); ?>
+													<div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
+															<?php if(function_exists('bcn_display'))
+															{
+																	bcn_display();
+															}?>
+													</div>
 													<h1 class="page_title"><?php echo $title = get_term_meta( $rootCategory, 'mytxseo_seo_title', 1 ); ?></h1>
 												</div>
 									<?php
@@ -194,9 +199,14 @@ sup {font-weight:700; font-size:0.8em;}
 																<div class="col-lg-1"></div>
 																<div class="col-lg-10 col-12 goods_properties">
 																<div class="breadcrumbs_container">
-																<h1 class="page_title"><?php the_title(); ?></h1>
-																	<?php if (function_exists('dimox_breadcrumbs')) dimox_breadcrumbs(); ?>
-															</div>
+																	<div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
+																			<?php if(function_exists('bcn_display'))
+																			{
+																					bcn_display();
+																			}?>
+																	</div>
+																	<h1 class="page_title"><?php the_title(); ?></h1>
+																</div>
 
 																</div>
 																<div class="col-lg-1"></div>

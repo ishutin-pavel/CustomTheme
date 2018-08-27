@@ -219,21 +219,8 @@ a {
 		padding-left: 0px;
 		margin-bottom: 0px;
 	}
-	/* stall item styles */
-	.stall_inner .breadcrumbs_container {
-		font-family: 'Times New Roman', Times, serif;
-	}
-	.stall_inner .breadcrumbs_container div {
-		width: 100%;
-		font-size: 0.9em;
-		line-height: 1.5em;
-		text-indent: 0.64em;
-		/*border-bottom: 1px solid #999;*/
-		overflow: hidden;
-	}
-	
-	
 
+	/* stall item styles */
 	.stall_inner .card_item .link > div:nth-child(1) {
 		border-right: 1px solid grey;
 		width: 25%;
