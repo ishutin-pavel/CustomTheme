@@ -97,7 +97,7 @@
 		$categories = get_categories( array(
 			'orderby' => 'name',
 			'hide_empty' => false,
-			'parent'  => 37
+			'parent'  => 10
 		) );
 		//print_r($categories);
 		$tal_categories = [];
@@ -126,7 +126,7 @@ if($rootCategory == 11){
 	$categories = get_categories( array(
 		'orderby' => 'id',
 		'hide_empty' => false,
-		'parent'  => 39
+		'parent'  => 11
 	) );
 	//print_r($categories);
 	$tal_categories = [];
@@ -155,7 +155,7 @@ if($rootCategory == 11){
 		$categories = get_categories( array(
 			'orderby' => 'name',
 			'hide_empty' => false,
-			'parent'  => 35
+			'parent'  => 12
 		) );
 		//print_r($categories);
 		$tal_categories = [];
