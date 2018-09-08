@@ -245,16 +245,18 @@
 	position: relative;
 	background-position: center center;
 	background-repeat: no-repeat;
+	background-size: contain;
 }
+
 @media (max-width: 520px) {
 	.stall a ul li:first-child {
-		background-size: 180px auto !important;
+		//background-size: 180px auto !important;
 		min-height: 125px;
 	}
 }
 @media (min-width: 521px) and (max-width: 768px) {
 	.stall a ul li:first-child {
-		background-size: 240px auto !important;
+		//background-size: 240px auto !important;
 	}
 }
 .stall a ul li:first-child img {
