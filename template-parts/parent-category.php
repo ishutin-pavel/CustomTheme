@@ -37,7 +37,13 @@
 						</div>
 						<h1 class="page_title"><?php echo $title = get_term_meta( $rootCategory, 'mytxseo_seo_title', 1 ); ?></h1>
 					</div>
-
+					<?php
+						if ( category_description() ) {
+							echo '<div class="cat-description-top">';
+							echo category_description();
+							echo '</div>';
+						}
+					?>
 
 
 		<!-- Standart item template -->
