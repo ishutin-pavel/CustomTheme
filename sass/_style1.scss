@@ -51,6 +51,8 @@ a {
 	&:active { color: #026eb6; text-decoration: none; }
 }
 
+img { max-width: 100% !important; }
+
 @media(max-width:992px){
 	.n2-ss-section-main-content n2-ss-layer-content{
 		padding: 0.625em 2.625em 0.625em 4.6875em!important;
