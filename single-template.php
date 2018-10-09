@@ -179,7 +179,7 @@ while ( have_posts() ) : the_post();
 									</li>
 									<?php $cat__ = get_the_category(); $cat__ = $cat__[0]; ?>
 									<li>
-										<a href="<?php echo $zapros_link = get_term_meta( $cat__->term_id, 'mytxseo_forma', 1 ); ?>" class="zapros">Оставить заявку на оборудование</a>
+										<a href="/ostavit-zayavku" class="zapros">Оставить заявку на оборудование</a>
 									</li>
 									<li>Доставка: транспортная компания <br>Самовывоз: Московская область, г. Краснознаменск</li>
 									<li><a href="/delivery" class="pricing">Подробнее о доставке и оплате</a></li>
