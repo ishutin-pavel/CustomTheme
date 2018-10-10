@@ -295,7 +295,6 @@ while ( have_posts() ) : the_post();
 					<div class="tab-content">
 
 						<div role="tabpanel" class="tab-pane fade in active show" id="description2" aria-expanded="true">
-							<h2>Описание</h2>
 							<div class="opisaniya">
 								<?php if( have_rows('art+price') ): ?>
 									<?php while( have_rows('art+price') ): the_row(); ?>
