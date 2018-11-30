@@ -35,15 +35,15 @@ $catlist = array_reverse($catlist);
 		<div class="row">
 				
 		<?php foreach ($catlist as $cat) : ?>
-			<div class="col-xl-3 col-lg-4 col-sm-6 col-6 whole_cart">
-						<a href="<?php echo get_term_link($cat->slug, 'category'); ?>" class="cart">
-								<ul>
-										<li style="background-image:url(<?php echo z_taxonomy_image_url($cat->term_id, 'full'); ?>);"></li>
-										<li><h3><?php echo $cat->name; ?></h3></li>
-										<li><p><?php echo $cat->description; ?></p></li>
-								</ul>
-						</a>
-				</div>
+			<div class="col-xl-4 col-lg-4 col-sm-6 col-6 whole_cart">
+				<a href="<?php echo get_term_link($cat->slug, 'category'); ?>" class="cart">
+						<ul style="width: 100%;">
+								<li style="background-image:url(<?php echo z_taxonomy_image_url($cat->term_id, 'full'); ?>);"></li>
+								<li><h3><?php echo $cat->name; ?></h3></li>
+								<li><p><?php echo $cat->description; ?></p></li>
+						</ul>
+				</a>
+			</div>
 	<?php endforeach; ?>
 
 		</div>

@@ -95,15 +95,18 @@ $this_post = get_the_category();
 													<?php
 														$featured_img_url = get_the_post_thumbnail_url(get_the_ID(), 'full'); 
 														$image_alt = get_post_meta(get_post_thumbnail_id(get_the_ID()), '_wp_attachment_image_alt', true);
-													?>
-													<a href="<?php echo $featured_img_url ?>" data-rel="lightbox" class="seo-thumb">  
-														<img src="<?php echo $featured_img_url ?>" alt="<?php 
-																if($image_alt != ''){
-																echo $image_alt;
-															} else { echo $post->post_title; } 
-															?>">
-													</a>
-													<?php the_content(); ?>
+														//Вывод картинки
+														if ( $featured_img_url) { ?>
+														<a href="<?php echo $featured_img_url ?>" data-rel="lightbox" class="seo-thumb">  
+															<img src="<?php echo $featured_img_url ?>" alt="<?php 
+																	if($image_alt != ''){
+																	echo $image_alt;
+																} else { echo $post->post_title; } 
+																?>">
+														</a>
+											<?php }
+
+													the_content(); ?>
 												</div>
 											</div>
 											<div class="col-xl-1 col-lg-0"></div>

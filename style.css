@@ -7852,8 +7852,10 @@ body {
   font-family: 'Times New Roman', Times, serif;
   margin-top: 4px !important; }
 
-h1,
-#page-container h1, .tab-content h1 {
+iframe {
+  max-width: 100% !important; }
+
+h1, #page-container h1, .tab-content h1 {
   font-size: 42pt;
   text-align: center; }
 

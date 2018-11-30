@@ -48,7 +48,12 @@
 
 		<!-- Standart item template -->
 		<?php
-		if( $rootCategory != 10 && $rootCategory != 11 && $rootCategory != 12 && $rootCategory != 14) {
+		if( $rootCategory != 10
+			&& $rootCategory != 11
+			&& $rootCategory != 12
+			&& $rootCategory != 14
+			&& $rootCategory != 72
+			) {
 			$args_main = array( 'category' => $rootCategory, 'order'   => 'ASC', 'posts_per_page'=>-1, 'numberposts'=>-1 );
 			$posts_main = get_posts( $args_main );
 			foreach( $posts_main as $post_main ) {
@@ -215,6 +220,35 @@ if($rootCategory == 11){
 	}
 ?>
 
+<?php
+	if( $rootCategory == 72 ) {
+		$categories = get_categories( array(
+			'orderby' => 'name',
+			'hide_empty' => false,
+			'include' => '10,11,12',
+			'parent'  => 72
+		) );
+		//print_r($categories);
+		$tal_categories = [];
+		foreach( $categories as $category ) {
+			$category_link = get_category_link( $category->term_id );
+?>
+<div class="col-lg-12 card_item">
+	<a href="<?php echo $category_link; ?>" class="link">
+		<div class="card__img-wrap">
+			<img src="<?php echo z_taxonomy_image_url($category->term_id, 'full'); ?>" alt="">
+		</div>
+		<div>
+			<ul class="main-ul">
+				<li><?php echo $category->name ?></li>
+				<li><?php echo category_description($category->term_id); ?></li>
+			</ul>
+		</div>
+	</a>
+</div>
+		<?php }
+	}
+?>
 
 					<!-- ./Tals item template -->
 					
