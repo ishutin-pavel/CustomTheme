@@ -9270,12 +9270,6 @@ caption {
 .table-style td {
   padding: 10px; }
 
-table {
-  background: #000;
-  text-align: center;
-  margin: 0.5em 0;
-  border-collapse: unset !important; }
-
 sup {
   font-weight: 700;
   font-size: 0.8em; }
@@ -9283,18 +9277,6 @@ sup {
 .th td, .th th {
   background: #69f;
   color: #fff; }
-
-th {
-  padding: 0.125em 0.5em;
-  background: #acf;
-  font-weight: 400; }
-
-td {
-  padding: 0.125em 0.5em;
-  background: #cdf; }
-
-tr:not([class='th']) td {
-  white-space: nowrap; }
 
 .spec {
   table-layout: fixed; }
@@ -9328,6 +9310,32 @@ tr:not([class='th']) td {
 .pric th {
   min-width: 50px; }
 
+/*.price-table */
+.price-table__wrap {
+  overflow: auto; }
+
+.price-table {
+  border-collapse: collapse;
+  text-align: center; }
+
+.price-table tr:first-child th {
+  font-weight: bold;
+  background-color: #d9edf7; }
+
+.price-table td, .price-table th {
+  padding: 10px;
+  border-top: 1px solid #ddd; }
+
+.price-table tr:nth-child(odd) {
+  background: white; }
+
+.price-table tr:nth-child(even) {
+  background: #f9f9f9; }
+
+.price-table tr:hover {
+  background-color: #f3f3f3; }
+
+/*End .price-table */
 .cat-description {
   margin-top: 10px; }
 
