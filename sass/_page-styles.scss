@@ -172,9 +172,10 @@
 }
 
 /* Таблицы */
-.table__wrap {
-  overflow: auto;
-}
+.table__wrap,
+.tabwrap,
+.price-table__wrap { overflow: auto; }
+
 caption {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -184,6 +185,7 @@ caption {
   caption-side: top;
 }
 
+/* .table-style*/
 .table-style {
   border-radius: 8px;
   border: 2px #d8e2ec solid;
@@ -210,6 +212,8 @@ caption {
 .table-style td {
     padding: 10px;
 }
+/* end .table-style*/
+
 
 //Из single.php
 sup {font-weight:700; font-size:0.8em;}
@@ -218,23 +222,36 @@ sup {font-weight:700; font-size:0.8em;}
 .spec td {color: #fff;background:#026eb6;padding:0.125em 0em; white-space:normal !important; cursor: pointer;}
 .spec td:hover {background:#ea1d24;}
 .spec .sel {background:#ea1d24;}
-.t10 {width:100%;}
 .t5 {width:50%;}
 .t3 {width:30%;}
 .pric td {padding:0;min-width:50px;}
 .pric th {min-width:50px;}
 
 /*.price-table */
-.price-table__wrap { overflow: auto; }
 
-.price-table { border-collapse: collapse; text-align: center; }
+.t10,
+.price-table { width: 100%; border-collapse: collapse; text-align: center; font-size: 14px;}
 
-.price-table tr:first-child th { font-weight: bold; background-color: #d9edf7; }
+.t10 tr:first-child th,
+.price-table tr:first-child th { font-weight: bold; background-color: #d9edf7; color: #000; }
 
+.t10 td, .t10 th,
 .price-table td, .price-table th { padding: 10px; border-top: 1px solid #ddd; }
 
+.t10 tr:nth-child(odd),
 .price-table tr:nth-child(odd) { background: white; }
 
+.t10 tr:nth-child(even),
 .price-table tr:nth-child(even) { background: #f9f9f9; }
+
+.t10 tr:hover,
 .price-table tr:hover { background-color: #f3f3f3; }
+
+.price-table tr td:first-child, { text-align: left; }
 /*End .price-table */
+
+/* .parameters__table */
+.parameters__table {width: 100%; text-align: left; }
+/* end .parameters__table */
+
+

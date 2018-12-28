@@ -316,11 +316,6 @@ img { max-width: 100% !important; }
 		color: white;
 	}
 
-	.parameters__table {
-		width: 100%;
-		text-align: left;
-	}
-
 	.about_company {
 		font-family: 'Times New Roman', Times, serif;
 		font-size: 14px;
@@ -426,7 +421,7 @@ img { max-width: 100% !important; }
 	#ppic img { height:31px; width: auto; margin:2px; box-shadow:0 0 0 1px #4444ff; cursor:pointer; order:2;}
 	#ppic a { order:2; padding:0; margin:0;}
 	#ppic .ppicsel {height:196px; width: auto; order:1; box-shadow:none !important; padding:0 200px 0 0; }
-	
+
 	#picvwrap {position:fixed;width:100%;height:100%; z-index:10;align-items:center; justify-content:center;top: 0;}
 	#picvshade {position:absolute;width:100%;height:100%;top:0; left:0;background:#000;opacity:0.9;}
 	#picv {position:relative;max-width:100%;height:auto;max-height:calc(100% - 124px);}
@@ -460,8 +455,8 @@ img { max-width: 100% !important; }
 .entry-content ol,
 .seo-current-cut-text ol,
 .tab-content ol {
-	counter-reset: li; 
-	list-style: none; 
+	counter-reset: li;
+	list-style: none;
 	font-size: 14px;
 	padding: 15px 0 15px 45px;
 	text-shadow: 0 1px 0 rgba(255,255,255,.5);
@@ -536,7 +531,7 @@ img { max-width: 100% !important; }
 	padding: 7px 20px;
 	margin-bottom: 10px;
 	border-radius: 5px;
-	border-left: 10px solid #f05d22; 
+	border-left: 10px solid #f05d22;
 	box-shadow: 2px -2px 5px 0 rgba(0,0,0,.1),
 			 -2px -2px 5px 0 rgba(0,0,0,.1),
 			2px 2px 5px 0 rgba(0,0,0,.1),

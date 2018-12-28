@@ -8151,10 +8151,6 @@ img {
   font-size: 15px;
   color: white; }
 
-.parameters__table {
-  width: 100%;
-  text-align: left; }
-
 .about_company {
   font-family: 'Times New Roman', Times, serif;
   font-size: 14px; }
@@ -9233,7 +9229,9 @@ input.wpcf7-form-control.wpcf7-submit {
   .n2-ss-section-main-content .n2-ss-layer-content {
     padding: 0.625em 2.625em 0.625em 4.6875em !important; } }
 /* ╨в╨░╨▒╨╗╨╕╤Ж╤Л */
-.table__wrap {
+.table__wrap,
+.tabwrap,
+.price-table__wrap {
   overflow: auto; }
 
 caption {
@@ -9244,6 +9242,7 @@ caption {
   font-weight: bold;
   caption-side: top; }
 
+/* .table-style*/
 .table-style {
   border-radius: 8px;
   border: 2px #d8e2ec solid;
@@ -9270,6 +9269,7 @@ caption {
 .table-style td {
   padding: 10px; }
 
+/* end .table-style*/
 sup {
   font-weight: 700;
   font-size: 0.8em; }
@@ -9294,9 +9294,6 @@ sup {
 .spec .sel {
   background: #ea1d24; }
 
-.t10 {
-  width: 100%; }
-
 .t5 {
   width: 50%; }
 
@@ -9311,31 +9308,46 @@ sup {
   min-width: 50px; }
 
 /*.price-table */
-.price-table__wrap {
-  overflow: auto; }
-
+.t10,
 .price-table {
+  width: 100%;
   border-collapse: collapse;
-  text-align: center; }
+  text-align: center;
+  font-size: 14px; }
 
+.t10 tr:first-child th,
 .price-table tr:first-child th {
   font-weight: bold;
-  background-color: #d9edf7; }
+  background-color: #d9edf7;
+  color: #000; }
 
+.t10 td, .t10 th,
 .price-table td, .price-table th {
   padding: 10px;
   border-top: 1px solid #ddd; }
 
+.t10 tr:nth-child(odd),
 .price-table tr:nth-child(odd) {
   background: white; }
 
+.t10 tr:nth-child(even),
 .price-table tr:nth-child(even) {
   background: #f9f9f9; }
 
+.t10 tr:hover,
 .price-table tr:hover {
   background-color: #f3f3f3; }
 
+.price-table tr td:first-child {
+  text-align: left; }
+
 /*End .price-table */
+/* .parameters__table */
+.parameters__table {
+  width: 100%;
+  text-align: left; }
+
+/* end .parameters__table */
 .cat-description {
   margin-top: 10px; }
 
