@@ -58,7 +58,7 @@
 			<div class="contact_info">
 
 				<div class="phones">
-					<p><a href="tel:88007752402" class="big_one">8 (800) 775-24-02</a></p>
+					<p><a href="tel:88004440995" class="big_one">8 (800) 444-09-95</a></p>
 					<p style="font-size:12px;">Бесплатный звонок по всей России</p>
 					<p><a style="font-size: 14px; letter-spacing: 3px;" href="mailto:info@zavodkranov.ru">info@zavodkranov.ru</a></p>
 				</div>
