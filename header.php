@@ -58,10 +58,17 @@
 			<div class="contact_info">
 
 				<div class="phones">
-					<p><a href="tel:88004440995" class="big_one">8 (800) 444-09-95</a></p>
-					<p style="font-size:12px;">Бесплатный звонок по всей России</p>
-					<p><a style="font-size: 14px; letter-spacing: 3px;" href="mailto:info@zavodkranov.ru">info@zavodkranov.ru</a></p>
+					<a href="tel:88004440995" class="free-phone">8 (800) 444-09-95</a>
+					<div class="free-phone__desc">Бесплатный звонок по всей России</div>
+					<div class="mail_and_phone">
+						<a class="mail_and_phone__mail" href="mailto:info@zavodkranov.ru">info@zavodkranov.ru</a>
+						<a class="mail_and_phone__phone" href="tel:+79265970000">8 (926) 597-00-00 </a>
+					</div>
 				</div>
+				<style>
+
+
+				</style>
 
 				<div class="socials">
 					<a href="https://vk.com/zavodkranov" target="_blank" class="icon"><img src="/wp-content/uploads/2018/01/vk.png" alt=""></a>
