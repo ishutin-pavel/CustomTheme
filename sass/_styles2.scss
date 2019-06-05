@@ -151,10 +151,10 @@
 	text-align: right;
 }
 .mail_and_phone__mail { font-size: 14px; letter-spacing: 3px; }
-.mail_and_phone__phone { }
+.mail_and_phone__phone { font-size: 25px; }
 
 @media(min-width: 992px) {
-	.mail_and_phone { flex-direction: row; }
+	.mail_and_phone { flex-direction: row; align-items: center;}
 	.mail_and_phone__mail { display: inline-block; margin-right: 1em; }
 }
 //phones end
