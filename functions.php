@@ -2,6 +2,7 @@
 wp_enqueue_script('jquery');
 add_action( 'wp_enqueue_scripts', 'theme_name_scripts' );
 function theme_name_scripts() {
+  wp_enqueue_script( 'lazysizes', get_template_directory_uri() . '/js/lazysizes.min.js', array('jquery'), '4.1.6', true );
     //wp_enqueue_style( 'normalize-css', get_template_directory_uri() . '/css/normalize.css');
     //wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css');
     //wp_enqueue_script( 'bootstrap-min', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '1.0.0', true );
@@ -98,7 +99,7 @@ class trueTaxonomyMetaBox {
         }
         // textarea
         elseif( $param->type == 'textarea' ){
-          echo '<textarea name="'. $meta_key .'" type="'. $param->type .'" id="'. $meta_key .'" value="'. $meta_value .'" class="large-text">'. esc_html( $meta_value ) .'</textarea>';                    
+          echo '<textarea name="'. $meta_key .'" type="'. $param->type .'" id="'. $meta_key .'" value="'. $meta_value .'" class="large-text">'. esc_html( $meta_value ) .'</textarea>';
           if( $param->desc ) echo '<p class="description">' . $param->desc . '</p>';
         }
         //wysiwyg
@@ -106,7 +107,7 @@ class trueTaxonomyMetaBox {
             $content = '';
             $editor_id = 'mycustomeditor';
 
-            wp_editor( $content, $editor_id );                   
+            wp_editor( $content, $editor_id );
           if( $param->desc ) echo '<p class="description">' . $param->desc . '</p>';
         }*/
         // text
@@ -116,7 +117,7 @@ class trueTaxonomyMetaBox {
           if( $param->desc ) echo '<p class="description">' . $param->desc . '</p>';
         }
         echo '</td>';
-      echo '</tr>';         
+      echo '</tr>';
     }
 
   }
@@ -138,7 +139,7 @@ class trueTaxonomyMetaBox {
 }// Конец расширения рубрик
 
 add_action('init', 'register_additional_term_fields');
-function register_additional_term_fields(){ 
+function register_additional_term_fields(){
   new trueTaxonomyMetaBox( array(
     'id'       => 'mytxseo', // id играет роль префикса названий полей
     'taxonomy' => array('category','post_tag'), // названия таксономий, для которых нужно добавить ниже перечисленные поля
@@ -199,7 +200,7 @@ function get_term_top_most_parent($term_id, $taxonomy) {
 function get_cat_parents_array($term_id, $taxonomy) {
 
   $result_array = array();
-  
+
   // start from the current term
   $parent = get_term_by('id', $term_id, $taxonomy);
   array_push($result_array, $parent);
