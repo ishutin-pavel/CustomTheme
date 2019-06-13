@@ -56,7 +56,7 @@ while ( have_posts() ) : the_post();
 											$gryz = get_sub_field('gryz_id');
 											$dataVal = get_sub_field('gryz_val');
 											$numrows = count( get_field( 'var' ) );
-											
+
 											$c_width = 100 / $numrows;
 										?>
 										<li style="width:<?php echo $c_width ?>%;" class="gryz_id<?php if($initActive < 1){echo ' active_gryz';$initActive++;} ?>" data-toggler="<?php echo $dataVal; ?>"><?php echo $gryz; ?></li>
@@ -79,7 +79,7 @@ while ( have_posts() ) : the_post();
 							<div class="properties_table">
 									<p>Пролет:</p>
 									<ul>
-										<?php 
+										<?php
 											$initActive = 0;
 											$setActive = 0;
 											while( have_rows('variationss') ): the_row();
@@ -102,54 +102,57 @@ while ( have_posts() ) : the_post();
 	<div class="container request" style="margin-top:12px;">
 			<div class="row">
 					<div class="col-xl-1 col-lg-0"></div>
+
 					<div class="col-xl-5 col-lg-6 col-12 image">
-					<?php
-						$featured_img_url = get_the_post_thumbnail_url($post->ID, 'full');
-						$image_alt = get_post_meta(get_post_thumbnail_id($post->ID), '_wp_attachment_image_alt', true);
-					?>
+						<?php
+							$featured_img_url = get_the_post_thumbnail_url($post->ID, 'full');
+							$image_alt = get_post_meta(get_post_thumbnail_id($post->ID), '_wp_attachment_image_alt', true);
+						?>
 
-					<!-- Sm-Gallery -->
-					<?php if( have_rows('gallery_body') ): ?>
-						<div class="sm-galerry">
-							<?php while( have_rows('gallery_body') ): the_row(); ?>
-								<?php $image_temp = get_sub_field('small_gallery_item');?>
-								<span class="sm-gallery-item">  
-									<img src="<?php echo $image_temp['url']; ?>" alt="<?php if($image_temp['alt'] != ''){echo $image_temp['alt']; }else{echo $post->post_title; } ?>">
-								</span>
-							<?php endwhile; ?>
-						</div>
-					<?php endif; ?>
-						<!-- ./Sm-Gallery -->
+						<!-- Sm-Gallery -->
+						<?php if( have_rows('gallery_body') ): ?>
+							<div class="sm-galerry">
+								<?php while( have_rows('gallery_body') ): the_row(); ?>
+									<?php $image_temp = get_sub_field('small_gallery_item');?>
+									<span class="sm-gallery-item">
+										<img class="lazyload" data-src="<?php echo $image_temp['url']; ?>" alt="<?php if($image_temp['alt'] != ''){echo $image_temp['alt']; }else{echo $post->post_title; } ?>">
+									</span>
+								<?php endwhile; ?>
+							</div>
+						<?php endif; ?>
+							<!-- ./Sm-Gallery -->
 
-					<div class="images-cont">
-		<!-- I -->
-		<?php if( have_rows('art+price') ): ?>
-			<?php while( have_rows('art+price') ): the_row(); ?>
-				<?php $image_temp = get_sub_field('img'); ?>
-				<?php $current_row_id = get_sub_field('id'); ?>
-				<?php if($image_temp != ''){ ?>
-				<a href="<?php echo $image_temp['url']; ?>" data-rel="lightbox" class="<?php the_sub_field('id'); ?>">  
-					<img src="<?php echo $image_temp['url']; ?>" alt="<?php if($image_temp['alt'] != ''){echo $image_temp['alt']; }else{echo $post->post_title; } ?>">
-				</a>
-				<?php }else{ ?>
-					<a href="<?php echo $featured_img_url; ?>" data-rel="lightbox" class="<?php the_sub_field('id'); ?>">  
-						<img src="<?php echo $featured_img_url; ?>" alt="<?php if($image_alt != ''){ echo $image_alt; } else { echo $post->post_title; } ?>">
-					</a>
-				<?php } ?>
-			<?php endwhile; ?>
-		<?php endif; ?>
-		<!-- ./I -->
-					</div>
-					</div>
+						<div class="images-cont">
+							<!-- I -->
+							<?php if( have_rows('art+price') ): ?>
+								<?php while( have_rows('art+price') ): the_row(); ?>
+									<?php $image_temp = get_sub_field('img'); ?>
+									<?php $current_row_id = get_sub_field('id'); ?>
+									<?php if($image_temp != ''){ ?>
+									<a href="<?php echo $image_temp['url']; ?>" data-rel="lightbox" class="<?php the_sub_field('id'); ?>">
+										<img class="lazyload" data-src="<?php echo $image_temp['url']; ?>" alt="<?php if($image_temp['alt'] != ''){echo $image_temp['alt']; }else{echo $post->post_title; } ?>">
+									</a>
+									<?php } else { ?>
+										<a href="<?php echo $featured_img_url; ?>" data-rel="lightbox" class="<?php the_sub_field('id'); ?>">
+											<img class="lazyload" data-src="<?php echo $featured_img_url; ?>" alt="<?php if($image_alt != ''){ echo $image_alt; } else { echo $post->post_title; } ?>">
+										</a>
+									<?php } ?>
+								<?php endwhile; ?>
+							<?php endif; ?>
+							<!-- ./I -->
+						</div><!-- .images-cont -->
+
+					</div><!-- .col -->
+
 					<div class="col-xl-5 col-lg-6 col-12 button">
 							<ul>
 									<li>Арт.: <span class="articul">
 										<!-- A -->
 										<?php if( have_rows('art+price') ): ?>
 												<?php while( have_rows('art+price') ): the_row(); ?>
-										
+
 														<span class="<?php the_sub_field('id'); ?>"><?php the_sub_field('art'); ?></span>
-														
+
 												<?php endwhile; ?>
 										<?php endif; ?>
 										<!-- ./A -->
@@ -159,10 +162,10 @@ while ( have_posts() ) : the_post();
 										<!-- P -->
 										<?php if( have_rows('art+price') ): ?>
 												<?php while( have_rows('art+price') ): the_row(); ?>
-										
+
 														<span class="<?php the_sub_field('id'); ?>">
-															<?php $sub_field_price = get_sub_field('price'); 
-															
+															<?php $sub_field_price = get_sub_field('price');
+
 															if($sub_field_price == "по запросу" || $sub_field_price == "договорная"){
 																?>
 																<span class="dogovor <?php the_sub_field('id'); ?>"><?php echo $sub_field_price; ?></span><?php
@@ -171,7 +174,7 @@ while ( have_posts() ) : the_post();
 															}
 															?>
 														</span>
-														
+
 												<?php endwhile; ?>
 										<?php endif; ?>
 										<!-- ./P -->
@@ -185,7 +188,7 @@ while ( have_posts() ) : the_post();
 									<li><a href="/delivery" class="pricing">Подробнее о доставке и оплате</a></li>
 									<li><?php echo $garantiya = get_term_meta( $cat__->term_id, 'mytxseo_garantiya', 1 ); ?></li>
 							</ul>
-					</div>
+					</div><!-- .col -->
 					<div class="col-xl-1 col-lg-0"></div>
 			</div>
 	</div>
@@ -202,7 +205,7 @@ while ( have_posts() ) : the_post();
 								</li>
 
 
-						<?php 
+						<?php
 							if(get_field('parametrs'))
 							{ ?>
 								<li class="nav-item">
@@ -211,7 +214,7 @@ while ( have_posts() ) : the_post();
 							<?php }
 						?>
 
-						<?php 
+						<?php
 							if(get_field('gabarits'))
 							{ ?>
 								<li class="nav-item">
@@ -220,7 +223,7 @@ while ( have_posts() ) : the_post();
 							<?php }
 						?>
 
-						<?php 
+						<?php
 							if(get_field('certificates'))
 							{ ?>
 								<li class="nav-item">
@@ -244,7 +247,7 @@ while ( have_posts() ) : the_post();
 							<?php }
 						?>
 
-						<?php 
+						<?php
 							if(get_field('benefits'))
 							{ ?>
 								<li class="nav-item">
@@ -253,7 +256,7 @@ while ( have_posts() ) : the_post();
 							<?php }
 						?>
 
-						<?php 
+						<?php
 							if(get_field('gp_vilet-streli'))
 							{ ?>
 								<li class="nav-item">
@@ -262,7 +265,7 @@ while ( have_posts() ) : the_post();
 							<?php }
 						?>
 
-						<?php 
+						<?php
 							if(get_field('fastening_types'))
 							{ ?>
 								<li class="nav-item">
@@ -271,7 +274,7 @@ while ( have_posts() ) : the_post();
 							<?php }
 						?>
 
-						<?php 
+						<?php
 							if(get_field('prices'))
 							{ ?>
 								<li class="nav-item">
@@ -280,7 +283,7 @@ while ( have_posts() ) : the_post();
 							<?php }
 						?>
 
-							<?php 
+							<?php
 							if(get_field('japan-kito-additional-options_row'))
 							{ ?>
 								<li class="nav-item">
@@ -290,7 +293,7 @@ while ( have_posts() ) : the_post();
 						?>
 
 					</ul>
-					
+
 					<!-- Tab panes -->
 					<div class="tab-content">
 
@@ -371,7 +374,7 @@ while ( have_posts() ) : the_post();
 								<?php endif; ?>
 							</div><!-- dop_opcii -->
 						</div><!-- tab-pane -->
-						
+
 						<div role="tabpanel" class="tab-pane fade" id="benefits">
 							<h2>Преимущества</h2>
 							<?php if(get_field('benefits')){ echo  get_field('benefits') ;} ?>
@@ -381,7 +384,7 @@ while ( have_posts() ) : the_post();
 							<h2>Грузоподъёмность и вылет стрелы</h2>
 							<?php if( get_field('gp_vilet-streli') ){ echo get_field('gp_vilet-streli'); } ?>
 						</div><!-- tab-pane -->
-						
+
 						<div role="tabpanel" class="tab-pane fade" id="fastening_types">
 							<h2>Типы крепления основной несущей балки к концевым опорам:</h2>
 							<?php if(get_field('fastening_types')){ echo  get_field('fastening_types') ;} ?>
