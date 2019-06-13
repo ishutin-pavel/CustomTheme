@@ -115,7 +115,7 @@ while ( have_posts() ) : the_post();
 								<?php while( have_rows('gallery_body') ): the_row(); ?>
 									<?php $image_temp = get_sub_field('small_gallery_item');?>
 									<span class="sm-gallery-item">
-										<img class="lazyload" data-src="<?php echo $image_temp['url']; ?>" alt="<?php if($image_temp['alt'] != ''){echo $image_temp['alt']; }else{echo $post->post_title; } ?>">
+										<img src="<?php echo $image_temp['url']; ?>" alt="<?php if($image_temp['alt'] != ''){echo $image_temp['alt']; }else{echo $post->post_title; } ?>">
 									</span>
 								<?php endwhile; ?>
 							</div>
@@ -130,11 +130,11 @@ while ( have_posts() ) : the_post();
 									<?php $current_row_id = get_sub_field('id'); ?>
 									<?php if($image_temp != ''){ ?>
 									<a href="<?php echo $image_temp['url']; ?>" data-rel="lightbox" class="<?php the_sub_field('id'); ?>">
-										<img class="lazyload" data-src="<?php echo $image_temp['url']; ?>" alt="<?php if($image_temp['alt'] != ''){echo $image_temp['alt']; }else{echo $post->post_title; } ?>">
+										<img src="<?php echo $image_temp['url']; ?>" alt="<?php if($image_temp['alt'] != ''){echo $image_temp['alt']; }else{echo $post->post_title; } ?>">
 									</a>
 									<?php } else { ?>
 										<a href="<?php echo $featured_img_url; ?>" data-rel="lightbox" class="<?php the_sub_field('id'); ?>">
-											<img class="lazyload" data-src="<?php echo $featured_img_url; ?>" alt="<?php if($image_alt != ''){ echo $image_alt; } else { echo $post->post_title; } ?>">
+											<img src="<?php echo $featured_img_url; ?>" alt="<?php if($image_alt != ''){ echo $image_alt; } else { echo $post->post_title; } ?>">
 										</a>
 									<?php } ?>
 								<?php endwhile; ?>
