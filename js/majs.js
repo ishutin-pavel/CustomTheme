@@ -1,3 +1,10 @@
+document.addEventListener('lazybeforeunveil', function(e){
+    var bg = e.target.getAttribute('data-bg');
+    if(bg){
+        e.target.style.backgroundImage = 'url(' + bg + ')';
+    }
+});
+
 window.onload = function() {
 		window.toggleControl = {}
 
@@ -26,16 +33,16 @@ window.onload = function() {
 		if(params['id'] != undefined){
 				var gryzi = $('.gryz_id');
 				var proleti = $('.prolet_id');
-		
+
 				console.log(gryzi);
 				console.log(proleti);
-		
+
 				var ids = params['id'].split('|');
 				console.log(ids);
-		
+
 				var act_gryz = gryzi[ids[0]-1];
 				var act_prolet = proleti[ids[1]-1];
-		
+
 				console.log(act_gryz);
 				console.log(act_prolet);
 				$(act_gryz).addClass("activate_it");
@@ -50,14 +57,14 @@ window.onload = function() {
 			console.log(activated);
 				callback();
 			}
-			
+
 		}
 		doItNow('math', function() {
 				console.log('asd');
 				setTimeout(function(){$('.activate_it').click();}, 200)
-				
+
 			});
-	
+
 	//do_it();
 //get params
 
@@ -81,14 +88,14 @@ $('.prolet_id').click(function(){
 /* Bolgariya Hack */
 
 $('.gryz_id_e').click(function(){
-		
+
 		toggler.currentGryz = $(this).data("toggler");
 		$('.polispast ul').css("display", "none");
 		$('.gryz_id_e').removeClass('active_gryz');
 		$(this).addClass('active_gryz');
 		let param = 'ul.' + toggler.currentGryz;
 		$(param).css("display", "flex");
-		
+
 		let child_ul = $(param);
 		child_ul = child_ul.find('li');
 		child_ul = $(child_ul[0]);
@@ -96,7 +103,7 @@ $('.gryz_id_e').click(function(){
 		$('.prolet_id_e').removeClass('active_prolet');
 		child_ul.addClass('active_prolet');
 
-		//console.log(child_ul.data("toggler")); 
+		//console.log(child_ul.data("toggler"));
 		console.log(toggler);
 		checkActive_bolg();
 });
@@ -139,13 +146,12 @@ function checkActive(){
 }
 //  checkActive();
 
-$('.sm-gallery-item').click(function(){
-		let url = $(this).find('img').attr("src");
-		console.log(url);console.log(url);
-		let currentThumb = 'a.' + toggler.currentGryz + 'x' + toggler.currentProlet;
-		console.log(currentThumb);
-		let subject = $(currentThumb).find('img');
-		console.log(subject);
-		subject.attr('src', url);
-});
-};
+	$('.sm-gallery-item').click(function() {
+			let url = $(this).find('img').attr("src");
+			let currentThumb = 'a.' + toggler.currentGryz + 'x' + toggler.currentProlet;
+			let subject = $(currentThumb).find('img');
+			subject.attr('src', url);
+	});
+
+};//onload
+
