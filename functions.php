@@ -2,10 +2,27 @@
 wp_enqueue_script('jquery');
 add_action( 'wp_enqueue_scripts', 'theme_name_scripts' );
 function theme_name_scripts() {
+  wp_enqueue_script( 'jquery_2_1_1', 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js', array('jquery'), '2.1.1', true );
+
+  wp_enqueue_script( 'tether', 'https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js', array('jquery'), '1.4.0', true );
+
+  wp_enqueue_script( 'bootstrap_js', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js', array('jquery'), '4.0.0', true );
+
+  /*
+  * Подключаем "слайдер"
+  */
+  //Кранбалка 60, 53, 90
+  //Кран мостовой 116, 851
+  if ( is_single( array( 53, 60, 90, 116, 788, 851, 1008, 1104, 1110, 1133, 2242, 2247, 2250, 2253, 2271, 2274, 2283, 2291, 2364 ) ) ) {
+    wp_enqueue_script( 'productSlider_1', get_template_directory_uri() . '/js/productSlider_1.js', array('jquery'), '0.0.1', true );
+  } else {
+    wp_enqueue_script( 'productSlider_2', get_template_directory_uri() . '/js/productSlider_2.js', array('jquery'), '0.0.1', true );
+  }
+
   wp_enqueue_script( 'lazysizes', get_template_directory_uri() . '/js/lazysizes.min.js', array('jquery'), '4.1.6', true );
-    //wp_enqueue_style( 'normalize-css', get_template_directory_uri() . '/css/normalize.css');
-    //wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css');
-    //wp_enqueue_script( 'bootstrap-min', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '1.0.0', true );
+
+  wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js', array('jquery'), '0.0.1', true );
+
 }
 
 add_theme_support( 'post-thumbnails' ); // для всех типов постов

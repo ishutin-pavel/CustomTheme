@@ -9,10 +9,7 @@
 				</div>
 		</div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
-<script src="/wp-content/themes/CustomTheme/js/majs.js"></script>
+
 
 <!-- Gallery from old site -->
 <div id="picvwrap" style="display:none;">
@@ -37,7 +34,7 @@
 	}
 
 	function promoautolist() {if (promoauto) {listpromo(1);}}
-	
+
 
 	function showpic(id) {
 		curpic=id;
