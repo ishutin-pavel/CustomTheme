@@ -142,8 +142,8 @@ function checkActive(){
   $('.sm-gallery-item').click(function() {
       let url = $(this).find('img').attr("src");
       let currentThumb = 'a.' + toggler.currentGryz + 'x' + toggler.currentProlet;
-      let subject = $(currentThumb).find('img');
-      subject.attr('src', url);
+      $(currentThumb).attr('href', url);
+      $(currentThumb).find('img').attr('src', url);
   });
 
 };//onload
